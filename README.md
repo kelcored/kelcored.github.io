@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <body style="background-color:red;">
 <script src="https://cdn.logwork.com/widget/countdown.js"></script>
