@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kelco Red</title>
   <link rel="icon" type="image/x-icon" href="https://i.imgur.com/rJ8QQ01.jpeg">
 </head>
@@ -17,69 +19,160 @@
 <meta property="twitter:domain" content="kelcored.github.io"/>
 <meta property="twitter:url" content="kelcored.github.io"/>
 <meta name="twitter:title" content="Kelco Red"/>
-<meta property="twitter:image" content="https://pbs.twimg.com/profile_images/1820316547275206656/rW8W2TvM_400x400.jpg"/>
+<meta property="twitter:image" content="https://i.imgur.com/VTcteEI.jpeg"/>
 <meta property="twitter:description" content="kelco red universeee"/>
-
-<!--some code starts here-->
-  
-  <!-- Styles -->
   <style>
-    body {
-      background-color: #000000;
-      color: white;
-      font-family: Arial, sans-serif;
+
+    /* RESET */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; font-family: Arial, sans-serif; }
+    .container { position: relative; width: 100%; height: 100%; }
+
+    /* SHARED BOX STYLES */
+    .box-small, .box-large {
+      position: absolute;
+      display: block;
+    }
+    .box-small img, .box-large img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* TOP-LEFT SMALL (clickable) */
+    .box-small.top-left {
+      top: 20px;
+      left: 20px;
+      width: 120px;
+      height: 120px;
+    }
+
+    /* BOTTOM-LEFT SMALL (non-clickable) */
+    .box-small.bottom-left {
+      bottom: 20px;
+      left: 20px;
+      width: 120px;
+      height: 120px;
+    }
+
+    /* LARGE BOX (clickable) */
+    .box-large.top-right {
+      top: 20px;
+      right: 20px;
+      width: 300px;
+      height: 300px;
+    }
+    .box-large.top-right span {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
       text-align: center;
-      margin: 0;
-      padding: 0;
+      font-weight: bold;
+      color: #000;
+      pointer-events: none; /* so span doesn’t block the link */
     }
-    .youtube-embed {
-      width: 80%;
-      max-width: 800px;
-      height: 450px;
-      margin: 40px auto 20px;
-      background-color: #444;
+
+    /* TEXT HEADINGS */
+    .heading {
+      position: absolute;
+      top: 20px;
+      left: 160px;
+      font-size: 24px;
+      line-height: 1.2;
     }
-    .image-container {
-      width: 200px;
-      height: 200px;
-      margin: 0 auto 40px;
+    .subheading {
+      position: absolute;
+      top: 56px;
+      left: 160px;
+      font-size: 18px;
+      line-height: 1.2;
     }
-    .image-container img {
+
+    /* RED UNDERLINED LINKS */
+    .links {
+      position: absolute;
+      top: 100px;
+      left: 160px;
+      font-size: 16px;
+    }
+    .links a {
+      color: red;
+      text-decoration: underline;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    /* NAV BUTTONS */
+    .nav {
+      position: absolute;
+      top: 180px;
+      left: 160px;
+    }
+    .nav a {
+      display: inline-block;
+      background: #000;
+      color: #fff;
+      text-decoration: underline;
+      padding: 6px 12px;
+      margin-right: 12px;
+      font-size: 14px;
+    }
+  </style>
+  <div class="container">
+
+    <!-- Top-Left Small (clickable) -->
+    <a href="https://kelcored.github.io" class="box-small top-left">
+      <img src="https://i.imgur.com/rJ8QQ01.jpeg" alt="Small green box">
+    </a>
+
+    <!-- Bottom-Left Small (non-clickable) -->
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Bottom Left Image Example</title>
+  <style>
+    .bottom-left-image {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 300px;
+      height: 500px;
+      z-index: 10;
+    }
+
+    .bottom-left-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-    .text-repeat {
-      font-size: 28px;
-      font-weight: bold;
-      line-height: 1.8;
-    }
   </style>
+  <!-- Other page content here -->
 
-  <!-- YouTube Embed -->
-  <div class="youtube-embed">
-    <!-- Replace with your own video ID -->
-    <iframe width="100%" height="100%" 
-      src="https://www.youtube.com/embed/pA_6VfBp2rw" 
-      frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-    </iframe>
+  <!-- Bottom-Left Small (non-clickable) -->
+  <div class="bottom-left-image">
+    <img src="https://i.imgur.com/P7ZijsS.jpeg" alt="Small green box">
   </div>
 
-  <!-- Image -->
-  
-  <img src="wydwithparentaladvisory.jpg" alt="wyd: july 22" style="width: 512px; height: 512px;">
-  
-<!-- Call-to-action links -->
-<div class="text-repeat">
-  <a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23" style="color: white; text-decoration: underline;">
-    PRE-SAVE NOW
-  </a><br>
-  <a href="https://elasticstage.com/kelcored/releases/wyd-complete-edition-album" style="color: white; text-decoration: underline;">
-    PRE-ORDER ON ELASTICSTAGE
-  </a>
-</div>
 
-<!--some code ends here-->
+    <!-- Large Box (clickable) with OUT NOW overlay -->
+    <a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23" class="box-large top-right">
+      <img src="wydwithparentaladvisory.jpg" alt="Large green box">
+    </a>
 
+<a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23" class="heading">wyd out now</a>
+<a href="https://elasticstage.com/kelcored/releases/wyd-album" class="subheading">wyd vinyls &amp; cd</a>
+
+    <!-- Underlined red text links -->
+    <div class="links">
+      <a href="https://www.instagram.com/kelcored/">kelcored.jpg</a>
+      <a href="https://youtube.com/@KelcoRed">kelcored.mp4</a>
+    </div>
+
+    <!-- Nav buttons -->
+    <div class="nav">
+      <a href="https://elasticstage.com/kelcored">shop</a>
+      <a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23">listen</a>
+    </div>
+
+  </div>
 </body>
 </html>
