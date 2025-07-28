@@ -4,175 +4,146 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kelco Red</title>
-  <link rel="icon" type="image/x-icon" href="https://i.imgur.com/rJ8QQ01.jpeg">
-</head>
-<body>
-<!--Link Preview by npxl32 | www.npxl32.com (with the www)-->
-<meta property="og:title" content="Kelco Red"/>
-<meta property="og:description" content="kelco red universeee"/>
-<meta property="og:type" content="website"/>
-<meta property="og:image" content="https://i.imgur.com/VTcteEI.jpeg"/>
-<meta property="og:url" content="kelcored.github.io"/>
-<meta property="og:domain" content="kelcored.github.io"/>
+  <link rel="icon" href="https://i.imgur.com/rJ8QQ01.jpeg" />
 
-<meta name="twitter:card" content="summary_large_image"/>
-<meta property="twitter:domain" content="kelcored.github.io"/>
-<meta property="twitter:url" content="kelcored.github.io"/>
-<meta name="twitter:title" content="Kelco Red"/>
-<meta property="twitter:image" content="https://i.imgur.com/VTcteEI.jpeg"/>
-<meta property="twitter:description" content="kelco red universeee"/>
+  <!-- Open Graph / Twitter Preview -->
+  <meta property="og:title" content="Kelco Red" />
+  <meta property="og:description" content="kelco red universeee" />
+  <meta property="og:image" content="https://i.imgur.com/VTcteEI.jpeg" />
+  <meta property="og:url" content="https://kelcored.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Styles -->
   <style>
-
-    /* RESET */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { width: 100%; height: 100%; font-family: Arial, sans-serif; }
-    .container { position: relative; width: 100%; height: 100%; }
-
-    /* SHARED BOX STYLES */
-    .box-small, .box-large {
-      position: absolute;
-      display: block;
-    }
-    .box-small img, .box-large img {
-      display: block;
-      width: 100%;
-      height: 100%;
+    * {
+      box-sizing: border-box;
     }
 
-    /* TOP-LEFT SMALL (clickable) */
-    .box-small.top-left {
-      top: 20px;
-      left: 20px;
-      width: 120px;
-      height: 120px;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
     }
 
-    /* BOTTOM-LEFT SMALL (non-clickable) */
-    .box-small.bottom-left {
-      bottom: 20px;
-      left: 20px;
-      width: 120px;
-      height: 120px;
-    }
-
-    /* LARGE BOX (clickable) */
-    .box-large.top-right {
-      top: 20px;
-      right: 20px;
-      width: 300px;
-      height: 300px;
-    }
-    .box-large.top-right span {
-      position: absolute;
-      bottom: 10px;
-      width: 100%;
-      text-align: center;
-      font-weight: bold;
-      color: #000;
-      pointer-events: none; /* so span doesn’t block the link */
-    }
-
-    /* TEXT HEADINGS */
-    .heading {
-      position: absolute;
-      top: 20px;
-      left: 160px;
-      font-size: 24px;
-      line-height: 1.2;
-    }
-    .subheading {
-      position: absolute;
-      top: 56px;
-      left: 160px;
-      font-size: 18px;
-      line-height: 1.2;
-    }
-
-    /* RED UNDERLINED LINKS */
-    .links {
-      position: absolute;
-      top: 100px;
-      left: 160px;
-      font-size: 16px;
-    }
-    .links a {
+    a {
       color: red;
       text-decoration: underline;
-      display: block;
-      margin-bottom: 6px;
     }
 
-    /* NAV BUTTONS */
-    .nav {
-      position: absolute;
-      top: 180px;
-      left: 160px;
-    }
-    .nav a {
-      display: inline-block;
-      background: #000;
-      color: #fff;
-      text-decoration: underline;
-      padding: 6px 12px;
-      margin-right: 12px;
-      font-size: 14px;
-    }
-  </style>
-  <div class="container">
-
-    <!-- Top-Left Small (clickable) -->
-    <a href="https://kelcored.github.io" class="box-small top-left">
-      <img src="https://i.imgur.com/rJ8QQ01.jpeg" alt="Small green box">
-    </a>
-
-    <!-- Bottom-Left Small (non-clickable) -->
-<html lang="en">
-  <meta charset="UTF-8">
-  <title>Bottom Left Image Example</title>
-  <style>
-    .bottom-left-image {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 300px;
-      height: 500px;
-      z-index: 10;
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
     }
 
-    .bottom-left-image img {
+    .top-logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .main-img {
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      max-width: 512px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .heading {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .subheading {
+      font-size: 18px;
+      margin: 5px 0 20px;
+    }
+
+    .links {
+      margin-bottom: 20px;
+    }
+
+    .links a {
+      display: block;
+      margin: 6px 0;
+    }
+
+    .nav {
+      margin-bottom: 30px;
+    }
+
+    .nav a {
+      background-color: white;
+      color: black;
+      padding: 8px 16px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .bottom-img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .top-logo {
+        width: 70px;
+      }
+
+      .main-img {
+        width: 90%;
+      }
+
+      .bottom-img {
+        max-width: 200px;
+      }
+
+      .nav a {
+        padding: 6px 12px;
+        font-size: 14px;
+      }
     }
   </style>
-  <!-- Other page content here -->
-
-  <!-- Bottom-Left Small (non-clickable) -->
-  <div class="bottom-left-image">
-    <img src="https://i.imgur.com/P7ZijsS.jpeg" alt="Small green box">
-  </div>
-
-
-    <!-- Large Box (clickable) with OUT NOW overlay -->
-    <a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23" class="box-large top-right">
-      <img src="wydwithparentaladvisory.jpg" alt="Large green box">
+</head>
+<body>
+  <div class="container">
+    <!-- Top-Left Logo -->
+    <a href="https://kelcored.github.io">
+      <img src="https://i.imgur.com/rJ8QQ01.jpeg" alt="Kelco Red" class="top-logo" />
     </a>
 
-<a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23" class="heading">wyd out now</a>
-<a href="https://elasticstage.com/kelcored/releases/wyd-album" class="subheading">wyd vinyls &amp; cd</a>
+    <!-- Main Image -->
+    <a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23">
+      <img src="wydwithparentaladvisory.jpg" alt="WYD Cover" class="main-img" />
+    </a>
 
-    <!-- Underlined red text links -->
+    <!-- Headings -->
+    <a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23" class="heading">wyd out now</a>
+    <a href="https://elasticstage.com/kelcored/releases/wyd-album" class="subheading">wyd vinyls &amp; cd</a>
+
+    <!-- Red Underlined Text Links -->
     <div class="links">
       <a href="https://www.instagram.com/kelcored/">kelcored.jpg</a>
       <a href="https://youtube.com/@KelcoRed">kelcored.mp4</a>
     </div>
 
-    <!-- Nav buttons -->
+    <!-- Nav Buttons -->
     <div class="nav">
       <a href="https://elasticstage.com/kelcored">shop</a>
       <a href="https://ffm.to/b0af440eb8eb4ac1adf3f9383d50ea23">listen</a>
     </div>
 
+    <!-- Bottom Image (Optional) -->
+    <img src="repeatingkr.png" alt="Extra visual" class="bottom-img" />
   </div>
 </body>
 </html>
